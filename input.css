@@ -1,0 +1,17 @@
+﻿div {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#main {
+    width: 200px;
+    height: 400px;
+}
+
+#advertising {
+    border: 2px solid black;
+}
+
+#logo {
+    display: inline-block;
+}
