@@ -1,17 +1,31 @@
-﻿div {
-    border: 1px solid black;
-    display: inline-block;
-}
+﻿/*div {*/
+/*}*/
 
 #main {
     width: 200px;
     height: 400px;
+    /*border: 1px solid black;*/
+    
+   
+}
+
+#head {
+    border: 1px solid black;
+    
+}
+
+#logo {
+    height: 100px;
+    display: inline-block;
+    border: 1px solid green
+}
+
+#profile-tab {
+    height: 80px;
+    display: inline-block;
+    border: 1px solid blue;
 }
 
 #advertising {
     border: 2px solid black;
-}
-
-#logo {
-    display: inline-block;
 }
