@@ -1,0 +1,18 @@
+﻿.slideshow {
+    position: relative;
+    /*width: 100%;*/
+    height: auto;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+}
+
+.slide img {
+    width: 300px;
+    height: auto;
+}

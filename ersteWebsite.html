@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Kostenlose Kleinanzeigen</title>
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="slideshow.css">
+    
 </head>
 
 <body>
@@ -19,7 +21,7 @@
                         <input id="button3" type="button" value="Neue Anzeige aufgeben"/>
                     </div>
                 </div>
-                <div id="tab">
+                <div id="tab"><hr>
                     <div id="posRightTab">
                         <input id="button4" type="button" value="Marktplatz"/>
                         <input id="button5" type="button" value="Immobilien"/>
@@ -34,42 +36,80 @@
                 <h1>Das größte Anzeigenportal Österreichs</h1>
             </div>
             <div id="Box1-2">
-                <iframe id="inlineFrameExample" src="https://www.openstreetmap.org/export/embed.html?bbox=13.94817352294922%2C48.153718618604735%2C14.62108612060547%2C48.43603439905769&amp">
+                <iframe id="inlineFrameExample"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=13.94817352294922%2C48.153718618604735%2C14.62108612060547%2C48.43603439905769&amp">
                 </iframe>
             </div>
         </div>
-        <div class="BoxBelow">Wohnungen</div>
-        <div class="BoxBelow">Häuser</div>
-        <div class="BoxBelow">Penthäuser</div>
-        <div class="BoxBelow">zu verschenken</div>
-        <div class="BoxBelow">
+        <div class="BoxBelow"><hr>Wohnungen
+</div>
+        <div class="BoxBelow"><hr>Häuser</div>
+        <div class="BoxBelow"><hr>Penthäuser</div>
+        <div class="BoxBelow"><hr>zu verschenken</div>
+        <div class="BoxBelow"><hr>
             <div class="infos">
-                <p>über willhaben</p>
-                <p>Jobs bei willhaben</p>
-                <p>Presse</p>
-                <p>willhaben Blog</p>
-                <p>Techblog</p>
-              
+                <p><strong>über willhaben</strong></p>
+                <a href="https://jobsbei.willhaben.at/" ><p>Jobs bei Willhaben</p></a>
+                <a href="https://www.willhaben.at/iad/presse" ><p>Presse</p></a>
+                <a href="https://www.willhaben.at/will/blog" ><p>Willhaben Block</p></a>
+                <a href="https://tech.willhaben.at/" > Techblock </a>
+
             </div>
             <div class="infos">
-                <p>Informationen</p>
-                <p>Hilfe und Kontakt</p>
-                <p>Sicherheitshinweise</p>
-                <p>Nutzungsbedingungen</p>
-                <p>Meine Daten</p>
+                <p><strong>Informationen</strong></p>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Hilfe und Kontakt</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Sicherheitshinweise</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Nutzungsbedingungen</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Meine Daten</p></a>
             </div>
             <div class="infos">
-                <p>Business</p>
-                <p>Hilfe und Kontakt</p>
-                <p>Sicherheitshinweise</p>
-                <p>Nutzungsbedingungen</p>
-                <p>Meine Daten</p>
+                <p><strong>Business</strong></p>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Willhaben Immobilien</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Willhaben Motornetzwerk</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Willhaben Jobs</p></a>
+                <a href="https://de.wikipedia.org/wiki/Oldtimer" target="blank"><p>Marktplatz Shoplösungen</p></a>
             </div>
-            <div class="infos">d</div>
+            <!--            <div class="infos"></div>-->
         </div>
 
     </div>
-    <div id="advertising"></div>
+    <div id="advertising">
+        <!--        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+        <div class="slideshow">
+            <div class="slide">
+                <img src="/Bilder/bild1.jfif" alt="Bild 1">
+            </div>
+
+            <div class="slide">
+                <img src="/Bilder/bild2.jfif" alt="Bild 2">
+            </div>
+
+            <div class="slide">
+                <img src="/Bilder/bild3.jfif" alt="Bild 3">
+            </div>
+        </div>
+
+        <script>
+            var slides = document.querySelectorAll('.slide');
+            var currentSlide = 0;
+
+            function showSlide(n) {
+                slides[currentSlide].style.display = 'none';
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].style.display = 'block';
+            }
+
+            showSlide(currentSlide);
+
+            setInterval(function() {
+                showSlide(currentSlide + 1);
+            }, 10000); // Ändere die Zahl, um die Dauer zwischen den Bildern anzupassen (in Millisekunden)
+        </script>
+        <!--        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+    </div>
 </div>
 </body>
 </html>
