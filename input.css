@@ -1,7 +1,7 @@
 ﻿div {
     vertical-align: top;
     box-sizing: border-box;
-    /*border: 2px solid black;*/
+    /*border: 1px solid grey;*/
     /*display: inline-block;*/
 }
  /*#head > div {*/
@@ -14,7 +14,7 @@
 }
 #main {
     width: 100%;
-    min-width: 450px;
+    min-width: 500px;
     max-width: 850px;
     /*height: 600px;*/
     /*border: 2px solid grey;*/
@@ -67,10 +67,20 @@
     /*height: 50px;*/
     display: inline-block;
 }
+.menü {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+#meinFenster {
+    z-index: 1;
+    background-color: yellow;
+}
+
 #posRightTab {
     display: inline-block;
     position: absolute;
-    top: 30px; right: 0;
+    top: 12px; right: 0;
 }
 /*+++++++++++++++++++++++++++++++++++++++++Hier beginnt die Box1*/
 #Box1 {                             
@@ -89,7 +99,7 @@
 iframe {
     /*border: 1px solid black;*/
     height: 140px;
-    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+    width: 200px; /* takes precedence over the width set with the HTML width attribute */
 }
 .BoxBelow {
     height: 200px;
@@ -107,7 +117,7 @@ iframe {
     font-size: 11px;
     
 }
-.infos > a {
+ a {
     text-decoration: none;
     color:inherit;
 }
@@ -116,4 +126,32 @@ iframe {
 /*}*/
 a:hover {
     color: grey;
+}
+#meinListe{
+    background: white;
+}
+#meinFenster {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 130px;
+}
+
+#meinFenster ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#meinFenster li {
+    margin-bottom: 5px;
+}
+
+#meinFenster a {
+    text-decoration: none;
+}
+ul {
+    margin:0;
 }
