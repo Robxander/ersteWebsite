@@ -16,3 +16,12 @@ p {
     background-color: #679bd0;
     margin: 0 1em 1em 2em;
 }
+#vorname {
+    font-family: "Agency FB";
+}
+#nachname {
+    font-family: "Agency FB";
+}
+#emailadresse{
+    font-family: "Agency FB";
+}
