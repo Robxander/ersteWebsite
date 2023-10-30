@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     margin: 0;
 }
 
@@ -14,37 +15,48 @@ body {
 }
 
 header {
-
+    display: flex;
     background-color: black;
     min-height: 100px;
     width: 100vw;
-    border: 4px solid black;
+
 }
 
 ul {
     display: flex;
-    /*justify-content: space-around;*/
-    justify-content: flex-end;
-    padding-right: 50px;
-    gap: 40px;
-}
-.menueColor {
-    text-decoration: none;
-}
-.menueColor:hover {
-    color: red;
-}
-li {
-    display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    border: 2px dotted grey;
-    border-radius: 1em;
-    width: 80px;
+    width: 100vw;
+    gap: 10px;
+    padding-right: 10px;
+    border: 2px solid red;
+    padding-inline-start: 10px;
 }
 
-.menueColor {
+.normal {
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 1em;
+    min-width: 80px;
+    max-width: 80px;
+}
+.normal2 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 1em;
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.colorLink:hover {
+    color: red;
+}
+
+.colorLink {
     color: grey;
+    text-decoration: none;
 }
 
 #sect1 {
@@ -53,11 +65,12 @@ li {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    gap: 10px;
+    gap: 5px;
     overflow-y: scroll;
     background-color: grey;
     border: 4px solid green;
 }
+
 
 footer {
     height: 30px;
@@ -72,4 +85,42 @@ div {
     height: 50px;
     width: 50px;
     flex-shrink: 0;
+}
+
+@media (max-width: 450px) {
+    #sect1 {
+        background-color: #7aa859;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (max-width: 314px) {
+    #sect1 {
+        background-color: red;
+    }
+    .normal {
+        min-width: unset;
+        max-width: unset;
+    }
+}
+@media (max-width: 280px) {
+    #sect1 {
+        background-color: yellow;
+    }
+    .normal {
+        /*min-width: unset;*/
+        /*max-width: unset;*/
+    }
+    header {
+        min-width: 280px;
+        max-width: 280px;
+    }
+    
+    ul {
+        width: auto;
+    }
 }

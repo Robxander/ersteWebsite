@@ -1,0 +1,9 @@
+﻿body {
+    background-color: #98ad92;
+}
+@media (min-width: 400px){
+    body {
+        background-color: orange;
+    }
+    
+}
