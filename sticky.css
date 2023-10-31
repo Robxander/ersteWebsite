@@ -17,10 +17,16 @@ header {
     background-color: black;
     flex-basis: 200px;   /*vorher min-width: 200px, Standart ist flex-basis: auto */
     width: 100vw;
+    position: relative;
+}
+#button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-ul {
+#menuView1 {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -77,20 +83,27 @@ footer {
     margin-top: auto;
 }
 
-div {
+.box1 {
     border: 4px solid white;
     height: 50px;
     width: 200px;
     flex-shrink: 0;
 }
 
+@media (min-width: 280px){
+    button {
+        display: none;
+    }
+}
+
 @media (max-width: 450px) {
     #sect1 {
         background-color: #7aa859;
     }
-    ul {
+    #menuView1 {
         flex-wrap: wrap;
     }
+    
 }
 @media (max-width: 420px) {
     #sect1 {
@@ -125,8 +138,42 @@ div {
         max-width: 280px;
     }
     
-    ul {
+    #menuView1 {
         width: auto;
         display: none;
     }
+}
+#meinFenster {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #5862a2;
+    padding: 10px;
+    width: 130px;
+    margin: 0;
+    
+}
+#Fenster {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 1;
+    background-color: white;
+    margin:0;
+}
+
+#meinFenster #Fenster {
+    list-style-type: none;
+    padding: 0;
+}
+
+#meinFenster li {
+    margin-bottom: 5px;
+}
+
+#meinFenster a {
+    text-decoration: none;
 }

@@ -9,66 +9,101 @@
 
 <body>
 <header>
-    <ul>
+
+    <div id="button1">
+        <button onclick="toggleWindow()">HMenü</button>
+    </div>
+        
+        <div id="meinFenster" style="display: none;">
+            <ul id="Fenster">
+                <li><a href="https://orf.at">Menü</a></li>
+                <li><a href="https://orf.at">Produkte</a></li>
+                <li><a href="https://orf.at">Überuns</a></li>
+                <li><a href="https://orf.at">Jobs</a></li>
+                <li><a href="https://orf.at">Maps</a></li>
+                
+            </ul>
+        </div>
+
+        <script>
+            var fensterOffen = false;
+
+            function toggleWindow() {
+                var fenster = document.getElementById("meinFenster");
+
+                if (fensterOffen) {
+                    fenster.style.display = "none";
+                    fensterOffen = false;
+                } else {
+                    fenster.style.display = "block";
+                    fensterOffen = true;
+                }
+            }
+        </script>
+    
+    <ul id="menuView1">
         <li class="normal"><a class="colorLink" href="https://www.orf.at"><strong>Menü </strong></a></li>
         <li class="normal"><a class="colorLink" href="https://www.orf.at"><strong>Produkte</strong></a></li>
         <li class="normal"><a class="colorLink" href="https://www.orf.at"><strong>Überuns </strong></a></li>
         <li class="normal"><a class="colorLink" href="https://www.orf.at"><strong>Jobs </strong></a></li>
         <li class="normal2"><a class="colorLink" href="https://www.orf.at"><strong>maps </strong></a></li>
     </ul>
+    
+        
+    
 </header>
 <section id="sect1">
     <div class="box1"><strong>1</strong></div>
-    <div class="box2"><strong>2</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
-    <div class="box3"><strong>3</strong></div>
+    <div class="box1"><strong>2</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
+    <div class="box1"><strong>3</strong></div>
 </section>
 <footer></footer>
 
