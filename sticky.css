@@ -1,8 +1,4 @@
 ﻿
-body {
-    margin: 0;
-}
-
 * {
     box-sizing: border-box !important;
 }
@@ -10,16 +6,18 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100vw;
+    margin: 0;
 }
 
 header {
     display: flex;
     background-color: black;
-    min-height: 100px;
+    flex-basis: 200px;   /*vorher min-width: 200px, Standart ist flex-basis: auto */
     width: 100vw;
-
+    
 }
 
 ul {
@@ -61,10 +59,9 @@ ul {
 
 #sect1 {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+    flex-wrap: wrap;
+    min-width: 430px;
+    max-width: 430px;
     gap: 5px;
     overflow-y: scroll;
     background-color: grey;
@@ -83,7 +80,7 @@ footer {
 div {
     border: 4px solid white;
     height: 50px;
-    width: 50px;
+    width: 200px;
     flex-shrink: 0;
 }
 
@@ -91,16 +88,24 @@ div {
     #sect1 {
         background-color: #7aa859;
     }
-
     ul {
         flex-wrap: wrap;
-        
     }
+}
+@media (max-width: 420px) {
+    #sect1 {
+        display:flex;
+        flex-wrap: wrap;
+        min-width: 230px;
+        max-width: 230px;
+    }
+    
 }
 
 @media (max-width: 314px) {
     #sect1 {
         background-color: red;
+        
     }
     .normal {
         min-width: unset;
@@ -122,5 +127,6 @@ div {
     
     ul {
         width: auto;
+        display: none;
     }
 }
