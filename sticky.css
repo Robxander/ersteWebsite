@@ -33,14 +33,14 @@ header {
     width: 100vw;
     gap: 10px;
     padding-right: 10px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     padding-inline-start: 10px;
 }
 
 .normal {
     display: flex;
     justify-content: center;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     border-radius: 1em;
     min-width: 80px;
     max-width: 80px;
@@ -48,7 +48,7 @@ header {
 .normal2 {
     display: flex;
     justify-content: center;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     border-radius: 1em;
     min-width: 80px;
     max-width: 80px;
@@ -79,7 +79,7 @@ footer {
     height: 30px;
     min-height: 30px;
     background-color: #e9edc9;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     margin-top: auto;
 }
 
